@@ -277,7 +277,7 @@ html {
   }
 
   .navbar ul {
-    display: none;
+    display: flex;
     position: absolute;
     top: 48px;
     left: 0;
@@ -313,3 +313,4 @@ html {
     padding: 16px 60px;
   }
 }
+
