@@ -52,6 +52,8 @@ html {
 .navbar ul {
   list-style: none;
   display: flex;
+  flex-direction: column:
+  position: relative;
   gap: 55px;
   margin: 0;
   padding: 0;
@@ -198,3 +200,4 @@ html {
     padding: 16px 60px;
   }
 }
+
