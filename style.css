@@ -243,8 +243,6 @@ html {
     transform: translateY(0);
   }
 }
-
-/* Responsive */
 @media (max-width: 900px) {
   .split, .three-images-left {
     flex-direction: column;
@@ -276,20 +274,17 @@ html {
     margin: 0;
   }
 
+  /* ✅ Changed part */
   .navbar ul {
-    display: flex;
+    display: flex;              /* instead of display: none */
+    flex-direction: column;
     position: absolute;
     top: 48px;
     left: 0;
     width: 100%;
     background: #ff7272;
-    flex-direction: column;
     padding: 0;
     margin: 0;
-  }
-
-  .navbar ul.open {
-    display: flex;
   }
 
   .navbar ul li {
@@ -298,19 +293,3 @@ html {
     border-bottom: 1px solid #fff;
   }
 }
-
-@media (min-width: 901px) {
-  .left h1 {
-    font-size: 65px; 
-  }
-
-  .left p {
-    font-size: 18px;
-  }
-
-  .Click-me {
-    font-size: 22px;
-    padding: 16px 60px;
-  }
-}
-
