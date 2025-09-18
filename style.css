@@ -231,77 +231,84 @@ html {
 }
 
 /* ========================== */
-/* RESPONSIVE DESIGN */
+/* Responsive Design */
 /* ========================== */
 
-/* Tablets (<= 1024px) */
-@media (max-width: 768px) {
-  .navbar ul {
-    gap: 24px;
-  }
-
+/* Tablet (<= 1024px) */
+@media screen and (max-width: 1024px) {
   .split {
     flex-direction: column;
   }
 
   .left {
     padding: 20px;
-    align-items: center;
     text-align: center;
+    align-items: center;
   }
 
   .left h1 {
     font-size: 36px;
-    margin-left: 0;
+    margin: 10px 0;
   }
 
   .left p {
-    margin-left: 0;
     font-size: 16px;
+    margin: 10px 0;
   }
 
   .right {
-    height: 400px;
+    width: 100%;
+    height: auto;
   }
 
   .three-images-left {
     flex-direction: column;
     align-items: center;
-    gap: 32px;
+    gap: 20px;
   }
 
-  .img-stack, 
+  .img-stack {
+    flex-direction: row;
+    width: 90%;
+    justify-content: center;
+  }
+
+  .square-img {
+    width: 45%;
+    height: auto;
+  }
+
   .img-long {
-    margin-left: 0;
+    width: 90%;
+    height: auto;
   }
 
   .side-box {
     width: 90%;
+    height: auto;
+    padding: 20px;
     text-align: center;
-    align-items: center;
   }
 }
 
-/* Mobiles (<= 768px) */
-@media (max-width: 768px) {
+/* Mobile (<= 768px) */
+@media screen and (max-width: 768px) {
+  /* Navbar stacks vertically */
   .navbar ul {
     flex-direction: column;
-    gap: 16px;
+    align-items: center;
+    gap: 12px;
     background: #ff7070;
-    position: absolute;
-    top: 50px;
-    left: 0;
-    width: 100%;
-    display: none;
     padding: 20px 0;
   }
 
-  .navbar ul.active {
-    display: flex;
+  .navbar li {
+    display: block;
   }
 
-  .navbar li:last-child {
-    display: block; /* ☰ menu */
+  .navbar a {
+    display: block;
+    padding: 8px 0;
   }
 
   .split {
@@ -318,47 +325,38 @@ html {
   }
 
   .Click-me {
-    padding: 12px 36px;
-    font-size: 16px;
+    padding: 10px 24px;
+    font-size: 14px;
   }
 
   .right {
-    height: 280px;
+    width: 100%;
+    height: auto;
   }
 
   .three-images-left {
     flex-direction: column;
-    margin: 20px auto;
+    gap: 16px;
   }
 
   .img-stack {
-    flex-direction: row;
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .square-img,
+  .img-long {
     width: 100%;
     height: auto;
-    justify-content: center;
-  }
-
-  .square-img {
-    width: 45%;
-    height: auto;
-    margin-left: 0;
-  }
-
-  .img-long {
-    width: 90%;
-    height: auto;
-    margin-left: 0;
   }
 
   .side-box {
-    width: 90%;
-    padding: 20px;
-    height: auto;
-    align-items: center;
+    width: 95%;
+    padding: 15px;
     text-align: center;
   }
 
   .side-box h2 {
-    font-size: 22px;
+    font-size: 20px;
   }
 }
